@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3</title>
+</head>
+<body>
+    <h1>Question 2</h1>
+    <h4>Write a program to take marks as input from the user and grade him accordingly. Use Conditional
+        statements. <br>Also the same code using switch or ternary</h4>
+
+        <br> <br>
+    <script>
+        let marks = +prompt("Enter the marks you Obtained...");
+        console.log("Using else if Conditional statement");
+        if(marks >= 90)
+        {
+           console.log("Your marks is "+marks+" and grade is A+");
+        }else if(marks < 90 && marks >= 80)
+        {
+            console.log("Your marks is "+marks+" and grade is A");
+        }else if(marks < 80 && marks >= 60)
+        {
+            console.log("Your marks is "+marks+" and grade is B");
+        }else if(marks < 60 && marks >= 50)
+        {
+            console.log("Your marks is "+marks+" and grade is C");
+        }else
+        {
+            console.log("You are Fail");
+        }
+
+        let marks1 = +prompt("Enter the marks you Obtained...");
+        console.log("Using Switch statement");
+        switch(marks1)
+        {
+            case 90: console.log("Your marks is "+marks1+" and grade is A+");
+                                break;
+            case 80: console.log("Your marks is "+marks1+" and grade is A");
+                                              break;
+            case 70: console.log("Your marks is "+marks1+" and grade is B");
+                                              break;
+            case 50: console.log("Your marks is "+marks1+" and grade is C");
+                                              break;
+            default: console.log("You are Fail");
+        }
+    </script>
+</body>
+</html>
